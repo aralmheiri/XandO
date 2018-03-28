@@ -1,4 +1,4 @@
-//Author:
+//Author: Aralmheiri
 #include <iostream>
 
 using namespace std;
@@ -12,7 +12,7 @@ const char O = 'O';
 const int QUIT = -1;
 
 int main()
-{
+ {
   //3x3 matrix of characters, initially with blank spaces in each position
   char board[ROWS][COLUMNS] = {{BLANK, BLANK, BLANK},
                                {BLANK, BLANK, BLANK},
@@ -40,6 +40,18 @@ int main()
     {
       cout<<"Values must be between 0 and 2.\n";
     }
+    else 
+    {
+    board[row][column]=turn;
+    if (turn == X)
+    {
+    turn=0;
+    }
+    else
+    {
+    turn=X;
+    }
+    }
     //TODO: Place the piece and swap turns
     //Outline
     //1. When neither of the (above) if nor else if statements are true, then...
@@ -57,10 +69,22 @@ int main()
     //1-A-1.  Display the value of the board at location of r and c
     //1-A-2. Display a space
     //1-B. Display an newline to move to the next row of the board
-    
+    for
+    (int r=0; r<ROWS; r++)
+    {
+
+    for 
+    (int c=0; c<COLUMNS; c++)
+    {
+
+    cout<<board[r][c]<<" ";
+      }
+      cout<<endl;
+      }
+
   }while( playing );
 
   cout<<"Goodbye!\n";
 
   return 0;
-}
+ }
