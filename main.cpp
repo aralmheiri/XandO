@@ -40,12 +40,14 @@ int main()
     {
       cout<<"Values must be between 0 and 2.\n";
     }
+
     else 
-    {
+   
+   {
     board[row][column]=turn;
     if (turn == X)
     {
-    turn=0;
+    turn=O;
     }
     else
     {
@@ -77,7 +79,7 @@ int main()
     (int c=0; c<COLUMNS; c++)
     {
 
-    cout<<board[r][c]<<" ";
+    cout<<board[r] [c]<<" ";
       }
       cout<<endl;
       }
