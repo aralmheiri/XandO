@@ -87,21 +87,21 @@ int main()
   {
     winner = board[0][0];
     playing = false; 
-    cout<<"winner is "<<winner<<endl;
+    cout<<"Winner is "<<winner<<endl;
     }
 
     else if(' ' != board[2][2] && board[2][2] == board[1][2] && board[2][2] ||' ' != board[2][2] && board[2][2] == board[2][0] && board[2][2] == board[2][1])
     {
     winner = board[2][2];
     playing = false;
-    cout<<"winner is "<<winner<<endl;
+    cout<<"Winner is "<<winner<<endl;
     }
 
     else if(' ' != board[1][1] && board[1][1] == board[0][1] && board[1][1] == board[2][1] ||' ' != board[1][1] && board[1][1] == board[1][0] && board[1][1] == board[1][2] ||' ' != board[1][1] && board[1][1] == board[2][0] && board[1][1] == board[0][2])
     {
     winner = board[1][1];
     playing = false;
-    cout<<"winner is "<<winner<<endl;
+    cout<<"Winner is "<<winner<<endl;
     }
 
     if(row == -1 && column == -1)
